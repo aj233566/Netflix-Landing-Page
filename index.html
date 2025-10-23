@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Netflix Homepage Clone" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E4FQF5GM15"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-E4FQF5GM15');
+  </script>
+  <!-- Preload font and external CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" as="image" href="/assets/images/bg.webp">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero">
+    <img src="/assets/images/bg.webp" style="display: none;" fetchpriority="high">
+
+    <!-- ================= HEADER / NAVBAR ================= -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <!-- Netflix Logo -->
+        <img src="assets/images/logo.svg" alt="Netflix logo" class="nav-logo" loading="lazy" />
+      </div>
+      <div class="nav-right">
+        <!-- Language Select with Font Awesome icons -->
+        <div class="select-wrapper">
+          <label for="language-select" class="visually-hidden">Language</label>
+          <img src="./assets/images/language.svg" alt="language icon" id="language_icon">
+          <select id="language-select" title="language-select" aria-label="language">
+            <option value="en" lang="en">English</option>
+            <option value="hi" lang="hi">Hindi</option>
+          </select>
+          <img src="./assets/images/caret-down.svg" alt="caret down icon" id="caret-down-icon">
+        </div>
+        <!-- Sign In Button -->
+        <button class="signIn">Sign In</button>
+      </div>
+    </nav>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 id="heading">
+        Unlimited movies,<br />
+        TV shows and<br />
+        more
+      </h1>
+      <p id="pricing_line">Starts at ₹149. Cancel at any time.</p>
+      <h2 id="heading3">
+        Ready to watch? Enter your email to create or restart your membership
+      </h2>
+      <div class="box-options">
+        <input autocomplete="email" minlength="5" maxlength="50" type="email" name="email" id="email_input"
+          placeholder="Email Address" />
+        <!-- Get Started Button -->
+        <button type="submit" class="get_started" id="Get_started">
+          <span> Get Started</span>
+          <img src="./assets/images/chevron-right.svg" alt="get started arrow" class="chevron-right_icon">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TRENDING NOW SECTION ================= -->
+  <section class="trending">
+    <h2 class="section-heading">Trending Now</h2>
+    <div class="movies-card list">
+      <!-- Movie Cards -->
+      <div class="movie-card" data-num="1">
+        <img src="assets/images/m_card_1.webp" alt="Movie 1" class="item" loading="lazy" />
+      </div>
+      <div class="movie-card" data-num="2">
+        <img src="assets/images/m_card_2.webp" alt="Movie 2" class="item" loading="lazy" height="275px" width="210px" />
+      </div>
+      <div class="movie-card" data-num="3">
+        <img src="assets/images/m_card_3.webp" alt="Movie 3" class="item" loading="lazy" />
+      </div>
+      <div class="movie-card" data-num="4">
+        <img src="assets/images/m_card_4.webp" alt="Movie 4" class="item" loading="lazy" />
+      </div>
+      <div class="movie-card" data-num="5">
+        <img src="assets/images/m_card_5.webp" alt="Movie 5" class="item" loading="lazy" />
+      </div>
+      <div class="movie-card" data-num="6">
+        <img src="assets/images/m_card_6.webp" alt="Movie 5" class="item" loading="lazy" />
+      </div>
+      <div class="movie-card" data-num="7">
+        <img src="assets/images/m_card_7.webp" alt="Movie 5" class="item" loading="lazy" />
+      </div>
+      <div class="movie-card" data-num="8">
+        <img src="assets/images/m_card_8.webp" alt="Movie 5" class="item" loading="lazy" />
+      </div>
+      <div class="movie-card" data-num="9">
+        <img src="assets/images/m_card_9.webp" alt="Movie 5" class="item" loading="lazy" height="275px" width="210px" />
+      </div>
+      <div class="movie-card" data-num="10">
+        <img src="assets/images/m_card_10.webp" alt="Movie 5" class="item" loading="lazy" height="275px"
+          width="210px" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MORE REASONS TO JOIN ================= -->
+  <section class="reasons">
+    <h2 id="heading2">More reasons to join</h2>
+    <div class="cards-container">
+      <!-- Card 1 -->
+      <div class="cards card_1">
+        <h2 class="card_heading Card_h1">Enjoy on your TV</h2>
+        <p class="card_para Card_p1 desktop-text">
+          Watch on smart TVs,<br /> PlayStation, Xbox,<br />Chromecast, Apple TV,<br /> Blu-ray players and more.
+        </p>
+        <p class="card_para Card_p1 mobile-text">
+          Watch on smart TVs, PlayStation, Xbox,<br />Chromecast, Apple TV, Blu-ray players<br>and more.
+        </p>
+        <img src="assets/images/card_icon1.webp" alt="TV" id="card_icon1" loading="lazy" />
+      </div>
+      <!-- Card 2 -->
+      <div class="cards card_2">
+        <h2 class="card_heading Card_h2 desktop-text">
+          Download your<br />shows to watch<br />offline
+        </h2>
+        <h2 class="card_heading Card_h2 mobile-text">
+          Download your shows to watch<br>offline
+        </h2>
+        <p class="card_para Card_p2 desktop-text">
+          Save your favourites easily<br />and always have something to<br />watch.
+        </p>
+        <p class="card_para Card_p2 mobile-text">
+          Save your favourites easily and always<br />have something to watch.
+        </p>
+        <img src="assets/images/card_icon2.webp" alt="Download" id="card_icon2" loading="lazy" />
+      </div>
+      <!-- Card 3 -->
+      <div class="cards card_3">
+        <h2 class="card_heading Card_h3">Watch everywhere</h2>
+        <p class="card_para Card_p3 desktop-text">
+          Stream unlimited movies and<br />TV shows on your phone,<br />tablet, laptop and TV
+        </p>
+        <p class="card_para Card_p3 mobile-text">
+          Stream unlimited movies and TV shows<br />on your phone, tablet, laptop and TV.
+        </p>
+        <img src="assets/images/card_icon3.webp" alt="Watch Anywhere" id="card_icon3" loading="lazy" />
+      </div>
+      <!-- Card 4 -->
+      <div class="cards card_4">
+        <h2 class="card_heading Card_h4">Create profiles for kids</h2>
+        <p class="card_para Card_p4 desktop-text">
+          Send kids on adventures with<br />their favourite characters in a<br />space made just for them—<br />free
+          with your membership.
+        </p>
+        <p class="card_para Card_p4 mobile-text">
+          Send kids on adventures with their<br /> favourite characters in a space made just <br>for them—free with your
+          membership.
+        </p>
+        <img src="assets/images/card_icon4.webp" alt="Profile for kids" id="card_icon4" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+
+  <!--================= FAQ SECTION (Using Details/Summary) ============> -->
+
+  <section class="FAQ">
+    <h2 id="faq_heading">Frequently Asked Questions</h2>
+    <details class="faq-item">
+      <summary class="faq_buttons">
+        What is Netflix?
+        <img src="./assets/images/plus.svg" alt="plus icon" class="plus_icon" loading="lazy">
+      </summary>
+      <div class="faq-answer">
+        <p>
+          Netflix is a streaming service that offers a wide variety of TV shows, movies, anime, documentaries, and more
+          on thousands of internet-connected devices.
+        </p>
+      </div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq_buttons">
+        How much does Netflix cost?
+        <img src="./assets/images/plus.svg" alt="plus icon" class="plus_icon" loading="lazy">
+      </summary>
+      <div class="faq-answer">
+        <p>
+          Plans start at ₹149 per month and vary depending on your needs.
+        </p>
+      </div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq_buttons">
+        Where can I watch?
+        <img src="./assets/images/plus.svg" alt="plus icon" class="plus_icon" loading="lazy">
+      </summary>
+      <div class="faq-answer">
+        <p>
+          Watch anywhere, anytime, on an unlimited number of devices.
+        </p>
+      </div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq_buttons">
+        How do I cancel?
+        <img src="./assets/images/plus.svg" alt="plus icon" class="plus_icon" loading="lazy">
+      </summary>
+      <div class="faq-answer">
+        <p>
+          You can easily cancel your account online in two clicks. There are no cancellation fees.
+        </p>
+      </div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq_buttons">
+        What can I watch on Netflix?
+        <img src="./assets/images/plus.svg" alt="plus icon" class="plus_icon" loading="lazy">
+      </summary>
+      <div class="faq-answer">
+        <p>
+          Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix
+          originals, and more.
+        </p>
+      </div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq_buttons">
+        Is Netflix good for kids?
+        <img src="./assets/images/plus.svg" alt="plus icon" class="plus_icon" loading="lazy">
+      </summary>
+      <div class="faq-answer">
+        <p>
+          The Netflix Kids experience is included in your membership to give parents control while kids enjoy
+          family-friendly TV shows and movies.
+        </p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ================= FINAL CTA (EMAIL SIGNUP) ================= -->
+  <section class="footer-signup">
+    <h2 id="footer-heading">
+      Ready to watch? Enter your email to create or restart your membership.
+    </h2>
+    <div class="footer-signup-form">
+      <input autocomplete="email" minlength="5" maxlength="50" type="email" name="email" id="email_input_2"
+        placeholder="Email Address" />
+      <button type="submit" id="get_started_footer" class="get_started">
+        <span>Get Started</span>
+        <img src="./assets/images/chevron-right.svg" alt="get started arrow" class="chevron-right_icon">
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-container">
+      <p class="questions">
+        Questions? Call
+        <a href="tel:+000-800-919-1743">000-800-919-1743</a>
+      </p>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <a href="#">FAQ</a>
+          <a href="#">Investor Relations</a>
+          <a href="#">Privacy</a>
+          <a href="#">Speed Test</a>
+        </div>
+        <div class="footer-col">
+          <a href="#">Help Centre</a>
+          <a href="#">Jobs</a>
+          <a href="#">Cookie Preferences</a>
+          <a href="#">Legal Notices</a>
+        </div>
+        <div class="footer-col">
+          <a href="#">Account</a>
+          <a href="#">Ways to Watch</a>
+          <a href="#">Corporate Information</a>
+          <a href="#">Only on Netflix</a>
+        </div>
+        <div class="footer-col">
+          <a href="#">Media Centre</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Netflix India</a>
+        </div>
+      </div>
+      <div class="footer-lang">
+        <div class="select-wrapper" id="language-select-footer">
+          <label for="language-select_2" class="visually-hidden">language</label>
+          <img src="./assets/images/language.svg" alt="language icon" id="language_icon">
+          <select title="language select" id="language-select_2" aria-label="Language select">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+          </select>
+          <img src="./assets/images/caret-down.svg" alt="caret down icon" id="caret-down-icon">
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
