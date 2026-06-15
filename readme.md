@@ -3,7 +3,7 @@
 A fully responsive **Netflix Landing Page website clone** built with **HTML, CSS**, and no **JavaScript**, inspired by the Netflix UI. This clone includes a modern layout, a custom FAQ section using `<details>` and `<summary>`, movie cards, and a styled landing page.
 
 ## 🌐 Live Preview
-🔗 [View Live Site on Netlify](https://moviefox.netlify.app/)
+🔗 [View Live Site on Netlify](https://movie-fox.netlify.app/)
 
 ## 📁 Features
 
